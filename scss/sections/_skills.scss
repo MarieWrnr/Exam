@@ -1,0 +1,128 @@
+.skills{
+    padding: $section-padding-y 0;
+    min-height: 660px;
+    width: 100%;
+    .blue{
+        color: $dr_blue_text;
+    }
+    .light-blue{
+        background: $button_br_blue_text;
+    }
+    .topaz{
+        background: $bg_topaz;
+    }
+    .fuxia{
+        background-color: $bg_fuxia;
+    }
+    .orange{
+        background-color: $button_1;
+    }
+    .descr{
+        width: 568px;
+        margin-left: 23%;
+    }
+    .diagram {
+        margin-left: 50px;
+        width: 160px;
+        height:160px;
+        border-radius: 50%;
+        position: relative;
+        overflow: hidden;
+        &::before{
+            content: '';
+            display: block;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            right: 12px;
+            bottom: 12px;
+            border-radius: 50%;
+            background: white;
+            z-index: 3;
+            opacity: 1;
+        }
+        & .piece{
+            width: 100%;
+            height: 100%;
+            left: 0;
+            right: 0;
+            overflow: hidden;
+            position: absolute;
+
+            &::before{
+                content: '';
+                display: block;
+                position: absolute;
+                width: 50%;
+                height: 100%;
+            }
+            &.left{
+                transform: rotate(0deg);
+                z-index: 2;
+                border-radius: 50%; /* only FireFox < 75.0v (fix bug)*/
+            }
+            &.right {
+                transform: rotate(360deg);
+            }
+            
+        }
+        &.deg90 {
+            & .piece.left{
+            transform: rotate(310deg); }
+
+            &.light-blue .left::before {
+                background:  $button_br_blue_text;
+            }
+        }
+        &.deg75 {
+            & .piece.left{
+                transform: rotate(255deg);
+            }
+            &.fuxia .left::before {
+                background:  $bg_fuxia;
+            }
+        }
+        &.deg70{
+            & .piece.left{
+                transform: rotate(235deg);
+            }
+            &.topaz .left::before {
+                background:  $bg_topaz;
+            }
+        }
+        &.deg85{
+            & .piece.left{
+                transform: rotate(278deg);
+            }
+            &.orange .left::before {
+                background:  $button_1;
+            }
+        }
+        & .left::before, & .right::before {
+            background: white;
+        }
+        & .text {
+            position: absolute;
+            z-index: 3;
+            top: 0;
+            bottom: 0;
+            left:0;
+            right:0;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            & p{
+                font-size: 50px;
+            }
+        }
+    }
+
+    .diagram.deg.fuxia .left::before {
+        background:  $button_br_blue_text;
+    }
+    .diagram.deg.topaz .left::before {
+        background:  $button_br_blue_text;
+    }
+
+}

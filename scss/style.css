@@ -180,4 +180,96 @@ a.link {
     color: #bdd1df;
     margin-left: 10px; }
 
+.skills {
+  padding: 100px 0;
+  min-height: 660px;
+  width: 100%; }
+  .skills .blue {
+    color: #3c4761; }
+  .skills .light-blue {
+    background: #30bae7; }
+  .skills .topaz {
+    background: #17c2a4; }
+  .skills .fuxia {
+    background-color: #d74680; }
+  .skills .orange {
+    background-color: #d86d3b; }
+  .skills .descr {
+    width: 568px;
+    margin-left: 23%; }
+  .skills .diagram {
+    margin-left: 50px;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden; }
+    .skills .diagram::before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      border-radius: 50%;
+      background: white;
+      z-index: 3;
+      opacity: 1; }
+    .skills .diagram .piece {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      right: 0;
+      overflow: hidden;
+      position: absolute; }
+      .skills .diagram .piece::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 50%;
+        height: 100%; }
+      .skills .diagram .piece.left {
+        transform: rotate(0deg);
+        z-index: 2;
+        border-radius: 50%;
+        /* only FireFox < 75.0v (fix bug)*/ }
+      .skills .diagram .piece.right {
+        transform: rotate(360deg); }
+    .skills .diagram.deg90 .piece.left {
+      transform: rotate(310deg); }
+    .skills .diagram.deg90.light-blue .left::before {
+      background: #30bae7; }
+    .skills .diagram.deg75 .piece.left {
+      transform: rotate(255deg); }
+    .skills .diagram.deg75.fuxia .left::before {
+      background: #d74680; }
+    .skills .diagram.deg70 .piece.left {
+      transform: rotate(235deg); }
+    .skills .diagram.deg70.topaz .left::before {
+      background: #17c2a4; }
+    .skills .diagram.deg85 .piece.left {
+      transform: rotate(278deg); }
+    .skills .diagram.deg85.orange .left::before {
+      background: #d86d3b; }
+    .skills .diagram .left::before, .skills .diagram .right::before {
+      background: white; }
+    .skills .diagram .text {
+      position: absolute;
+      z-index: 3;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center; }
+      .skills .diagram .text p {
+        font-size: 50px; }
+  .skills .diagram.deg.fuxia .left::before {
+    background: #30bae7; }
+  .skills .diagram.deg.topaz .left::before {
+    background: #30bae7; }
+
 /*# sourceMappingURL=style.css.map */
