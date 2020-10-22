@@ -1,0 +1,29 @@
+.services{
+    padding: $section-padding-y 0;
+    background-color: $bg_topaz;
+    min-height: 750px;
+    width: 100%;
+
+    .descr{
+        width: 603px;
+        height: 45px;
+        margin-left: 23%;
+        &-white{
+            color: white;
+        }
+    }
+    &-wrapper {
+        margin-top: 80px;
+    }
+    &-item {
+        max-width: 215px;
+        padding: 20px 10px;
+        box-sizing: border-box;
+    }
+    .icon{
+        margin-left: 70px;
+    }
+   .white{
+        color: white;
+    }
+}

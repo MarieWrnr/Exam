@@ -1,0 +1,18 @@
+$button-padding-default: 28px 82px;
+
+.btn {
+
+    &-primary {
+        color: #fff;
+        background-color: $button_work;
+        border-radius: 4px;
+        transition: background-color 250ms ease-out;
+        &:hover {
+            color: $button_work;
+            background-color: #fff;
+            box-shadow: 0 5px 0 2px $button_hover;
+        }
+        padding: $button-padding-default;
+        box-shadow: 0 5px 0 2px $button_1;
+    }
+}

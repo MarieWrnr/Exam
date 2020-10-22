@@ -7,12 +7,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
 integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
 </head>
 <body>
     <!--MAIN MENU-->
     <header>
         <div class = "container">
-            <nav>
+            <nav class = "nav">
                 <ul class = "nav-list">
                     <li class = "nav-list-item">
                         <a class = "logo" href = "\">
@@ -20,19 +21,19 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
                         </a>
                     </li>
                     <li class = "nav-list-item">
-                        <a class = "nav-item-link" href="#Home">Home</a>
+                        <a class = "link" href="#Home">HOME</a>
                     </li>
                     <li class = "nav-list-item">
-                        <a class = "nav-item-link" href="#About">About</a>
+                        <a class = "link" href="#About">ABOUT</a>
                     </li>
                     <li class = "nav-list-item">
-                        <a class = "nav-item-link" href="#Work">Work</a>
+                        <a class = "link" href="#Work">WORK</a>
                     </li>
                     <li class = "nav-list-item">
-                        <a class = "nav-item-link" href="#Blog">Blog</a>
+                        <a class = "link" href="#Blog">BLOG</a>
                     </li>
                     <li class = "nav-list-item">
-                        <a class = "nav-item-link" href="#Contact">Contact</a>
+                        <a class = "link" href="#Contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -42,81 +43,55 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
     <!--WELCOME TITLE-->
     <section class = "welcome" id = "Home">
         <div class = "container">
-            <h1 class = "h-welcome_heading">Hi there! We are the new kids on the block 
-                and we build awesome websites and mobile apps.</h1>
-            <a href = "#contacts" class = "btn btn-primary">Work with us!</a>
+            <h1 class = "welcome-heading">Hi there! We are the new kids on the block </h1>
+            <h1 class = "welcome-heading-2">and we build awesome websites and mobile apps.</h1>
+            <a href = "#contacts" class = "btn btn-primary">WORK WITH US!</a>
         </div>
     </section>
 
     <!--SERVICES-->
     <section class = "services" id = "About">
         <div class = "container">
-            <h2 class = "heading white">SERVICES WE PROVIDE</h2>
+            <h2 class = "white">SERVICES WE PROVIDE</h2>
             <div class = "line-center black"></div>
-            <p class = "description white">We are working with both individuals and businesses from all over the globe 
+            <p class = "descr white">We are working with both individuals and businesses from all over the globe 
                 to create awesome websites and applications.
             </p>
         <div class = "row services-wrapper">
             <div class = "col">
                 <div class = "services-item">
                     <div class = "icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="120" height="124">
-                            <path fill="#D84848" fill-rule="evenodd" d="M120 13.999H56V80h64L99.844 47 120 13.999z"/>
-                            <path fill="#AA1F1F" fill-rule="evenodd" d="M56 66.749V80l17-11-17-2.251z"/>
-                            <path fill="#F57B71" fill-rule="evenodd" d="M73 68.999H25l-18.344-64H73v64z"/>
-                            <path fill="#DAEAF2" fill-rule="evenodd" d="M4.435.18a5 5 0 0 1 6.124 3.536L41.1 117.695a5 5 0 1 1-9.659 2.588L.9 6.304A5 5 0 0 1 4.435.18z"/>
-                        </svg>
+                        <img src = "img/flag-icon.png">
                     </div>
-                        <h3 class = "l-heading white">BRANDING</h3>
+                        <h3 class = "white">BRANDING</h3>
                         <p class = "add-ds white">Lorem ipsum dolor sit amet, 
                             consectetuer adipiscing elit, sed diam nonummy nibh.</p>
                     </div>
                 </div>
-            </div>
-            <div class = "row services-wrapper">
                 <div class = "col">
                     <div class = "services-item">
                         <div class = "icon">
                             <img src = "img/crayon-icon.png">
                         </div>
-                            <h3 class = "l-heading white">DESIGN</h3>
+                            <h3 class = "white">DESIGN</h3>
                             <p class = "add-ds white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
                     </div>
                 </div>
-            </div>
-            <div class = "row services-wrapper">
                 <div class = "col">
                     <div class = "services-item">
                         <div class = "icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="161" height="130">
-                                <path fill="#487FBC" fill-rule="evenodd" d="M158.816 88.052l-4.737 2.271c-1.488.713-2.892 2.635-3.12 4.268l-1.199 4.806c-.555 1.554-.248 3.939.684 5.301l3.46 5.058c.931 1.362.74 3.431-.427 4.597l-5.139 5.139c-1.167 1.166-3.235 1.358-4.596.426l-5.107-3.493c-1.361-.932-3.747-1.24-5.301-.685l-4.173 1.068c-1.632.246-3.551 1.665-4.265 3.152l-1.854 3.865c-.712 1.488-2.6 2.355-4.194 1.928l-7.02-1.881c-1.594-.427-2.794-2.122-2.668-3.767l.338-4.411c.125-1.645-.853-3.799-2.176-4.785 0 0-.31-.231-1.541-1.462-1.314-1.314-1.673-1.804-1.673-1.804-.976-1.33-3.119-2.316-4.765-2.19l-4.49.344c-1.646.127-3.341-1.075-3.768-2.668l-1.88-7.02c-.427-1.594.441-3.481 1.928-4.195l4.163-1.996c1.489-.714 2.912-2.631 3.166-4.262l.753-3.032c.527-1.563.196-3.956-.736-5.318l-2.835-4.144c-.932-1.362-.74-3.431.427-4.598l5.138-5.138c1.167-1.167 3.236-1.36 4.597-.428l3.516 2.406c1.361.932 3.718 1.165 5.236.52l3.944-1.27c1.614-.347 3.518-1.847 4.232-3.335l2.161-4.507c.714-1.488 2.602-2.356 4.195-1.929l7.02 1.881c1.594.427 2.794 2.123 2.668 3.768l-.309 4.038c-.126 1.645.888 3.749 2.253 4.675 0 0 1.194.811 2.821 2.438l.999.999c.941 1.19 3.056 2.061 4.702 1.935l5.852-.449c1.646-.126 3.341 1.075 3.768 2.669l1.881 7.019c.426 1.594-.441 3.483-1.929 4.196zm-28.237-3.404c-3.275-3.276-8.579-3.28-11.846-.013-3.269 3.268-3.262 8.57.013 11.846 3.276 3.275 8.579 3.281 11.846.013 3.268-3.266 3.261-8.57-.013-11.846zM97.199 56.69l-6.42 1.204c-1.621.303-3.373 1.834-3.894 3.4l-1.858 4.535c-.739 1.475-.581 3.796.35 5.157l3.683 5.383c.932 1.361.74 3.429-.427 4.596l-5.658 5.659c-1.167 1.166-3.235 1.358-4.597.426l-5.314-3.636c-1.361-.932-3.679-1.081-5.149-.332l-4.644 1.934c-1.565.526-3.093 2.284-3.397 3.906L58.7 95.188c-.304 1.622-1.903 2.949-3.553 2.949h-8c-1.65 0-3.249-1.327-3.553-2.949l-1.168-6.226c-.303-1.622-1.834-3.374-3.4-3.893l-4.718-1.944c-1.473-.743-3.792-.59-5.153.342l-5.238 3.583c-1.361.932-3.429.74-4.596-.426l-5.658-5.659c-1.167-1.167-1.359-3.235-.427-4.597l3.591-5.248c.931-1.362 1.087-3.682.343-5.155l-1.935-4.704c-.521-1.566-2.273-3.096-3.894-3.4L5.095 56.69c-1.621-.304-2.948-1.903-2.948-3.553v-8c0-1.65 1.327-3.249 2.948-3.553l6.246-1.171c1.621-.304 3.373-1.834 3.894-3.4l1.934-4.703c.744-1.473.588-3.793-.343-5.155l-3.591-5.249c-.932-1.362-.74-3.431.427-4.598l5.657-5.657c1.167-1.167 3.235-1.359 4.596-.428l5.239 3.584c1.361.932 3.68 1.086 5.153.342l4.719-1.945c1.566-.519 3.097-2.271 3.4-3.893l1.168-6.225c.304-1.622 1.903-2.949 3.553-2.949h8c1.65 0 3.249 1.327 3.553 2.949l1.174 6.266c.304 1.621 1.832 3.379 3.397 3.905l4.645 1.935c1.47.749 3.788.599 5.149-.333l5.313-3.635c1.362-.932 3.431-.74 4.597.427l5.658 5.657c1.166 1.167 1.359 3.236.427 4.597l-3.683 5.382c-.931 1.362-1.089 3.683-.35 5.158l1.858 4.536c.521 1.566 2.273 3.095 3.894 3.4l6.42 1.203c1.621.305 2.948 1.903 2.948 3.553v8c0 1.65-1.327 3.249-2.948 3.553zM51.064 36.165c-7.148 0-12.941 5.808-12.941 12.972s5.793 12.972 12.941 12.972c7.147 0 12.94-5.808 12.94-12.972s-5.793-12.972-12.94-12.972z"/>
-                                <path fill="#DAEAF2" fill-rule="evenodd" d="M133.624 99.516c-4.937 4.936-12.947 4.928-17.897-.021-4.946-4.948-4.957-12.958-.019-17.895 4.936-4.936 12.948-4.928 17.895.02 4.946 4.949 4.957 12.961.021 17.896zM51.065 67.622c-10.183 0-18.436-8.274-18.436-18.48 0-10.206 8.253-18.479 18.436-18.479 10.182 0 18.435 8.273 18.435 18.479s-8.253 18.48-18.435 18.48z"/>
-                                <path fill="#00234A" fill-rule="evenodd" d="M100 118.999c-25-22.999-3-54-3-54L152 118s-25.96 24.956-52 .999zM15 84c-34-37 1-70 1-70l70 70s-37 36.999-71 0z" opacity=".2"/>
-                            </svg>
+                            <img src = "img/gears-icon.png">
                         </div>
-                            <h3 class = "l-heading white">DEVELOPMENT</h3>
+                            <h3 class = "white">DEVELOPMENT</h3>
                             <p class = "add-ds white">At vero eos et accusamus et iusto odio dignissimos qui blanditiis praesentium.</p>
                     </div>
                 </div>
-            </div>
-            <div class = "row services-wrapper">
                 <div class = "col">
                     <div class = "services-item">
                         <div class = "icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="117" height="147">
-                                <path fill="#3A6DA5" fill-rule="evenodd" d="M48.105 120.999s1.607 1.216 1.689 3.574c.083 2.357-.559 17.575-.559 17.575s14.43-17 18.606-22.283c3.442-4.355 4.047-12.559-2.132-17.858-6.178-5.299-17.604 18.992-17.604 18.992z"/>
-                                <path fill="#487FBC" fill-rule="evenodd" d="M18.958 104.171s-1.857-.783-3.94.324c-2.082 1.107-14.941 9.271-14.941 9.271s7.508-20.996 9.995-27.254c2.05-5.158 8.853-9.784 16.531-7.083 7.678 2.701-7.645 24.742-7.645 24.742z"/>
-                                <path fill="#D97475" fill-rule="evenodd" d="M26.079 109.149l13.857 8a3.5 3.5 0 0 1-3.5 6.062l-13.857-8a3.5 3.5 0 1 1 3.5-6.062z"/>
-                                <path fill="#F1C40F" fill-rule="evenodd" d="M29.806 121.693a8 8 0 0 1 2.929 10.928c-2.21 3.826-17.076 13.518-17.076 13.518s1.01-17.692 3.219-21.518a8 8 0 0 1 10.928-2.928z"/>
-                                <path fill="#DAEAF2" fill-rule="evenodd" d="M91.498 17.566c-.6-1.811-1.01-3.432-.913-3.6.097-.167.131-.298.076-.289-.055.008-.492-.041-.549-.186-.056-.145-.185-.121-.285.053-.101.174-1.706.662-3.567 1.084 0 0-35.111 7.963-50.811 36.715-17.466 31.987-16.15 53.779-16.15 53.779-.038 1.909 1.283 4.25 2.936 5.205l5.781 3.337 3.38 1.952 3.381 1.951 6.139 3.545c1.653.954 4.36.959 6.016.011 0 0 18.559-10.364 37.528-41.483 17.083-28.027 7.038-62.074 7.038-62.074z"/>
-                                <path fill="#BEDAE8" fill-rule="evenodd" d="M91.44 12.939l25.115 14.501-61 105.654-25.115-14.499 61-105.656z"/>
-                                <path fill="#D84848" fill-rule="evenodd" d="M92.952 10.322l15.599 8.981-13 22.517s-6.805-6.053-14.616-10.685l12.017-20.813z"/>
-                                <path fill="#F57B71" fill-rule="evenodd" d="M80.935 31.135c-.232-.138-.462-.279-.696-.413-7.92-4.573-16.731-7.402-16.731-7.402L76.486.842l16.466 9.48-12.017 20.813z"/>
-                                <path fill="#FFF" fill-rule="evenodd" d="M70.99 47.361c7.875 4.547 10.573 14.616 6.026 22.492-4.546 7.875-14.616 10.573-22.491 6.026-7.875-4.546-10.573-14.617-6.027-22.492 4.547-7.875 14.617-10.573 22.492-6.026z"/>
-                                <path fill="#5AD2EB" fill-rule="evenodd" d="M69.007 50.795c5.979 3.452 8.027 11.097 4.576 17.075-3.452 5.979-11.097 8.027-17.076 4.575-5.978-3.451-8.027-11.096-4.575-17.075 3.452-5.978 11.097-8.027 17.075-4.575z"/>
-                            </svg>     
-                        </div>                       
-                            <h3 class = "l-heading white">ROCKET SCIENCE</h3>
+                            <img src = "img/rocket-icon.png">  
+                        </div>  
+                            <h3 class = "hd white">ROCKET SCIENCE</h3>
                             <p class = "add-ds white">Et harum quidem rerum est et expedita distinctio. Nam libero tempore.</p>
                     </div>
                 </div>
@@ -126,71 +101,74 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
 
     <!--TEAM-->
     <section class = "team">
-        <h2 class = "heading blue">MEET OUR BEAUTIFUL TEAM</h2>
-        <div class = "line-center light_blue"></div>
-        <p class = "description blue">We are a small team of designers and developers, who help brands with big ideas.</p>
+        <div class = "container">
+        <h2 class = "blue">MEET OUR BEAUTIFUL TEAM</h2>
+        <div class = "line-center"></div>
+        <p class = "descr blue">We are a small team of designers and developers, who help brands with big ideas.</p>
         <div class = "row team-wrapper">
             <div class = "col">
                 <div class = "team-item">
-
-                    <div class ="portrait"><img src="https://18000.com.ua/wp-content/uploads/2019/02/котики.jpg" alt = "cats"></div> <!--подставить сюда картинку-->
+                    <img src="https://18000.com.ua/wp-content/uploads/2019/02/котики.jpg" alt = "cats" class ="portrait">
                     <h3 class = "l-heading blue">ANNE HATHAWAY</h3>
                     <p class = "add-ds light-blue">CEO / Marketing Guru</p>
                     <p class = "add-ds blue">Lorem ipsum dolor sit amet, 
                         consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna.</p>
+                        <div class = "four">
                         <a href="https://www.facebook.com"  target="_blank" ><i class="fab fa-facebook"></i></a>      <!--ССЫЛКИ ДОЛЖНЫ ОТКРЫВАТЬСЯ В НОВОЙ ВКЛАДКЕ-->
                         <a href="https://twitter.com/?lang=ru"  target="_blank" ><i class="fab fa-twitter-square"></i></a>
                         <a href="https://www.linkedin.com/"  target="_blank" ><i class="fab fa-linkedin"></i></a>
                         <a href="https://www.google.com/intl/ru/gmail/about/"  target="_blank" ><i class="far fa-envelope"></i></a>
-
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class = "row team-wrapper">
             <div class = "col">
                 <div class = "team-item">
-                    <div class ="portrait"><img src="https://18000.com.ua/wp-content/uploads/2019/02/котики.jpg" alt = "cats"></div> <!--подставить сюда картинку-->
-                    <h3 class = "l-heading blue">KATE UPTON</h3>
+                    <img src="https://18000.com.ua/wp-content/uploads/2019/02/котики.jpg" alt = "cats" class ="portrait">
+                    <h3 class = "blue">KATE UPTON</h3>
                     <p class = "add-ds light-blue">Creative Director</p>
                     <p class = "add-ds blue">Duis aute irure dolor in in voluptate velit esse cillum dolore fugiat nulla pariatur. Excepteur sint occaecat non diam proident.</p>
+                    <div class = "three">
                     <a href="https://twitter.com/?lang=ru"  target="_blank" ><i class="fab fa-twitter-square"></i></a> <!--ССЫЛКИ ДОЛЖНЫ ОТКРЫВАТЬСЯ В НОВОЙ ВКЛАДКЕ-->
                     <a href="https://www.linkedin.com/"  target="_blank" ><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.google.com/intl/ru/gmail/about/"  target="_blank" ><i class="far fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class = "row team-wrapper">
             <div class = "col">
                 <div class = "team-item">
-                    <div class ="portrait"><img src="https://18000.com.ua/wp-content/uploads/2019/02/котики.jpg" alt = "cats"></div> <!--подставить сюда картинку-->
-                    <h3 class = "l-heading blue">OLIVIA WILDE</h3>
+                    <img src="https://18000.com.ua/wp-content/uploads/2019/02/котики.jpg" alt = "cats" class ="portrait">
+                    <h3 class = "blue">OLIVIA WILDE</h3>
                     <p class = "add-ds light-blue">Lead Designer</p>
                     <p class = "add-ds blue">Nemo enim ipsam voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem nesciunt.</p>
+                    <div class = "four">
                     <a href="https://www.facebook.com"  target="_blank" ><i class="fab fa-facebook"></i></a> <!--ССЫЛКИ ДОЛЖНЫ ОТКРЫВАТЬСЯ В НОВОЙ ВКЛАДКЕ-->
                     <a href="https://twitter.com/?lang=ru"  target="_blank" ><i class="fab fa-twitter-square"></i></a>
                     <a href="https://www.linkedin.com/"  target="_blank" ><i class="fab fa-linkedin"></i></a>
                     <a href="https://www.google.com/intl/ru/gmail/about/"  target="_blank" ><i class="far fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class = "row team-wrapper">
             <div class = "col">
                 <div class = "team-item">
-                    <div class ="portrait"><img src="https://18000.com.ua/wp-content/uploads/2019/02/котики.jpg" alt = "cats"></div> 
-                    <h3 class = "l-heading blue">ASHLEY GREENE</h3>
+                    <img src="https://18000.com.ua/wp-content/uploads/2019/02/котики.jpg" alt = "cats" class ="portrait">
+                    <h3 class = "blue">ASHLEY GREENE</h3>
                     <p class = "add-ds light-blue">SEO / Developer</p>
                     <p class = "add-ds blue">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+                    <div class = "three">
                     <a href="https://www.facebook.com"  target="_blank" ><i class="fab fa-facebook"></i></a>
                     <a href="https://twitter.com/?lang=ru"  target="_blank" ><i class="fab fa-twitter-square"></i></a>
                     <a href="https://www.google.com/intl/ru/gmail/about/"  target="_blank" ><i class="far fa-envelope"></i></a>
                 </div>
+                </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!--SKILLS-->
     <section class = "skills" id = "Work">
-        <h2 class="heading blue">WE GOT SKILLS!</h2> 
+        <div class = "container">
+        <h2 class="blue">WE GOT SKILLS!</h2> 
         <div class = "line-center grey"></div>
         <div class = "row team-wrapper">
             <div class = "col">
@@ -260,11 +238,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
                 </div>
             </div>
         </div>
+    </div>
     </section>
 
     <!--PORTFOLIO-->
     <section class = "portfolio">
-        <h2 class = "heading black">OUR PORTFOLIO</h2>
+        <div class = "container">
+        <h2 class = "black">OUR PORTFOLIO</h2>
         <div class = "line-center beige"></div>
         <p class = "description black">Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet
             consectetur, adipisci velit, sed quia non numquam</p>
@@ -289,7 +269,9 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <p class = "description black">BLOG / MAGAZINE FLAT UI KIT</p>
         </div>
         <a href = "#contacts" class = "btn btn-primary topaz">LOAD MORE PROJECTS</a>
+    </div>
     </section>
+    <div class = "container">
     <section class = "testimonials" id = "Blog">
         <h2 class="heading white">WHAT POEPLE SAY ABOUT US</h2> 
         <div class = "line-center black"></div>
@@ -318,12 +300,13 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             <h3 class = "l-heading white">EMMA STONE</h3>
             <p class = "description beige">Co-Founder of Shazam</p>
         </div>
+    </div>
     </section>
     
     <!--FORM-->
     <section class = "get-in-touch" id = "Contact">
         <div class = "container">
-        <h2 class="heading white">WHAT POEPLE SAY ABOUT US</h2> 
+        <h2 class="white">GET IN TOUCH</h2> 
         <div class = "line-center dark-blue"></div>
         <p class = "description white">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
         <form>
@@ -365,5 +348,6 @@ integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4
             </nav>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,37 @@
+.team{
+    padding: $section-padding-y 0;
+    background-color: $bg_light_blue;
+    min-height: 915px;
+    width: 100%;
+    .blue{
+        color: $dr_blue_text;
+    }
+    .light-blue{
+        color: $button_br_blue_text;
+    }
+    &-wrapper{
+        margin-top: 80px;
+    }
+    &-item{
+        max-width: 200px;
+    }
+    .portrait{
+        border: 1px solid transparent;
+        border-radius: 50%;
+    }
+    img{
+        width: 200px;
+        height: 200px;
+    }
+    .three{
+        margin-left: 23%;
+    }
+    .four{
+        margin-left: 13%;
+    }
+    i{
+        font-size: 25px;
+        color: $links;
+        margin-left: 10px;
+    }
+}

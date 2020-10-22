@@ -1,0 +1,62 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+.row {
+  display: flex; }
+
+.col {
+  flex: auto; }
+
+body {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif; }
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  transition: background-color 250ms;
+  background-color: #87509c; }
+  header.is-fixed {
+    background-color: #fff; }
+    header.is-fixed .nav {
+      padding: 5px; }
+
+.nav {
+  padding-top: 22px 0;
+  transition: padding 250ms; }
+  .nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    .nav-list-item {
+      list-style-type: none; }
+      .nav-list-item:first-child {
+        margin-right: auto; }
+      .nav-list-item:not(:first-child) {
+        margin-left: 65px; }
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #505050;
+  font-size: 22px;
+  text-decoration: none;
+  transition: padding 250ms; }
+  .logo img {
+    width: 118px;
+    height: 37px;
+    margin-right: 20px;
+    transition: width 250ms, height 250ms; }
+    .is-fixed .logo img {
+      width: 42px;
+      height: 42px; }
+
+/*# sourceMappingURL=style.css.map */

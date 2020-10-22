@@ -1,0 +1,12 @@
+// Utils
+@import 'utils/index';
+
+body {
+    margin: 0;
+    font-family: $gen_font;
+}
+
+// Components
+@import 'components/index';
+// Sections
+@import 'sections/index';

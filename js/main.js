@@ -3,7 +3,7 @@
 window.addEventListener('scroll', handleFixedHeader);
 
 function handleFixedHeader() {
-  const $header = document.querySelector('.header');
+  const $header = document.querySelector('header');
   const { scrollY } = window;
   const fixedPos = 100;
 
