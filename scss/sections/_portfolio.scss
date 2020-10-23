@@ -1,0 +1,36 @@
+.portfolio{
+    padding: $section-padding-y 0;
+    background-color: $bg_beige_text;
+    min-height: 1420px;
+    width: 100%;
+    .descr{
+        width: 515px;
+        margin-left: 25%;
+    }
+    .mini-menu{
+        margin-left: 30%;
+        margin-bottom: 60px;
+    }
+    .rectangle{
+        display: inline-block;
+        margin-left: 10px;
+        border: 1px solid transparent;
+        background-color: $bg_beige_op;
+        padding: 6px 27px;
+        border-radius: 6%;
+        transition: background-color 250ms ease-out;
+        &:hover{
+            background-color: white;
+        }
+    }
+    
+    .descr-1{
+        margin-right: 5%;
+    }
+    a{
+        margin: 0 33%;
+        white-space: nowrap;
+        position: relative;
+        top: 70px;
+    }
+}

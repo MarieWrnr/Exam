@@ -1,0 +1,16 @@
+footer{
+    padding: 5px 0;
+    background-color: $footer;
+}
+ul{
+    margin-left: 5%;
+}
+li{
+    list-style: none;
+}
+a{
+    color: white;
+}
+a.foot:hover{
+    color: $button_br_blue_text;
+}

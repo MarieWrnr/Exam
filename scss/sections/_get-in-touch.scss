@@ -1,0 +1,50 @@
+.get-in-touch{
+    padding: $section-padding-y 0;
+    background-color: $bg_blue;
+    min-height: 820px;
+    width: 100%;
+    .white{
+        color: white;
+    }
+    .touch{
+        margin-bottom: 27px;
+        margin-left: 115px;
+    }
+    form{
+        margin-top: 80px;
+    }
+    input{
+        border: 1px solid transparent;
+        width: 415px;
+        background-color: $form_drblue;
+        border-radius: 5px;
+        padding: 25px 22px 20px;
+        color: white;
+        box-sizing: border-box;
+    }
+    input, textarea{
+
+    &::-webkit-input-placeholder { 
+        color: white; }
+    &::-moz-placeholder { color: white; }
+    }
+
+    button{
+        position: sticky;
+        border-color: transparent;
+        margin-left: 38%;
+    }
+    textarea{
+        resize: none;
+        width: 943px;
+        height: 200px;
+        border: 1px solid transparent;
+        background-color: $form_drblue;
+        border-radius: 5px;
+        box-sizing: border-box;
+        color: white;
+        padding-left: 25px;
+        padding-top: 24px;
+    }
+
+}

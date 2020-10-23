@@ -4,7 +4,7 @@ $button-padding-default: 28px 82px;
 
     &-primary {
         color: #fff;
-        background-color: $button_work;
+        position: sticky;
         border-radius: 4px;
         transition: background-color 250ms ease-out;
         &:hover {
@@ -13,6 +13,23 @@ $button-padding-default: 28px 82px;
             box-shadow: 0 5px 0 2px $button_hover;
         }
         padding: $button-padding-default;
-        box-shadow: 0 5px 0 2px $button_1;
+        &-orange{
+            box-shadow: 0 5px 0 2px $button_1;
+            background-color: $button_work;
+        }
+        &-topaz{
+                background-color: $bg_topaz;
+                box-shadow: 0 5px 0 2px $button_2;
+                &:hover{
+                    color: $bg_topaz;
+                }
+        }
+        &-light-blue{
+            background-color: $button_br_blue_text;
+            box-shadow: 0 5px 0 2px $button_3;
+            &:hover{
+                color: $button_br_blue_text;
+            }
+    }
     }
 }
