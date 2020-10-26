@@ -59,30 +59,30 @@ button{
 @media only screen and (max-width: 320px){
     header{
         .nav-list-item:not(:first-child){
-            font-size: 10px;
+            font-size: $menu_media;
         }
     }
     .welcome{
         &-heading, &-heading-2{
-        font-size: 24.5px;
+        font-size: $h1_media;
         }
        
         a.btn{
-            font-size: 15.5px;
+            font-size: $btn_media;
         }
     }
     h2{
-        font-size: 17px;
+        font-size: $h2_l_media;
     }
     q{
         font-size: initial !important;
     }
     h3{
-        font-size: 15.5px;
+        font-size: $btn_media;
         text-align: center !important;
     }
     p.descr, p.add-ds, p.descr-1, a.btn{
-        font-size: 13.5px;
+        font-size: $descr_l_media;
     }
     .team{
         h2{
@@ -104,32 +104,37 @@ button{
         text-align: center !important;
     }
     p.descr, p{
-        font-size: 16px;
+        font-size: $text_l;
     }
     .welcome{
         &-heading, &-heading-2{
-        font-size: 24.5px;
+        font-size: $h1_media;
         }
        
         a.btn{
-            font-size: 15.5px;
+            font-size: $btn_media;
         }
     }
     .portfolio{
         a{
-            font-size: 15.5px;
+            font-size: $btn_media;
         }
     }
     .testimonials, .team{
         h2{
-        font-size: 18px;
+        font-size: $p_descr;
         }
     }
     q{
-        font-size: 15.5px;
+        font-size: $btn_media;
     }
     a{
         width: 100px;
+    }
+}
+@media only screen and (max-width: 768px) and (min-width: 580px) {
+    p.descr{
+        text-align: center;
     }
 }
 

@@ -78,7 +78,23 @@
         margin-left: 10% !important;
     }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) and (min-width: 580px){
+    .get-in-touch {
+        .touch {
+        margin-left: 85px !important;
+        }
+        input {
+            margin-top: 10px;
+        }
+        input, textarea{
+            width: 554px !important;
+        }
+        button {
+            margin-left: 30% !important;
+        }
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 770px){
     .get-in-touch {
         .touch {
         margin-left: 45px;

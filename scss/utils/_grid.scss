@@ -36,7 +36,16 @@
         margin: 0 auto;
     }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) and (min-width: 580px) {
+    .container{
+        max-width: 768px;
+        position: relative;
+    }
+    .row{
+        flex-wrap: wrap;
+    }
+}
+@media only screen and (max-width: 992px) and (min-width: 770px) {
     .container{
         max-width: 992px;
         position: relative;

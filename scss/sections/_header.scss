@@ -105,7 +105,16 @@ a.link{
     }
 
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 768px) and (min-width: 580px) {
+    header{
+        max-width: 767px !important;
+    }
+    .nav{
+        width: 735px !important;
+    }
+    
+}
+@media only screen and (max-width: 992px) and (min-width: 770px) {
     header{ 
         width: 100%; 
         max-width: 992px;
