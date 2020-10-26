@@ -36,3 +36,9 @@
         margin: 0 auto;
     }
 }
+@media only screen and (max-width: 992px) {
+    .container{
+        max-width: 992px;
+        position: relative;
+    }
+}

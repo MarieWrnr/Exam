@@ -140,6 +140,10 @@ button {
 
   .col {
     margin: 0 auto; } }
+@media only screen and (max-width: 992px) {
+  .container {
+    max-width: 992px;
+    position: relative; } }
 body {
   margin: 0;
   font-family: "Titillium Web", sans-serif; }
@@ -256,6 +260,18 @@ a.link {
       margin-top: 10px; }
     .nav-list-item:first-child {
       margin-right: 15px; } }
+@media only screen and (max-width: 992px) {
+  header {
+    width: 100%;
+    max-width: 992px;
+    position: absolute;
+    margin: 0; }
+    header img {
+      width: 96px;
+      height: 30px; }
+
+  .nav {
+    width: 818px; } }
 .welcome {
   display: flex;
   align-items: center;
@@ -288,6 +304,9 @@ a.link {
   .welcome a {
     margin: 0 auto !important;
     display: block; } }
+@media only screen and (max-width: 992px) {
+  .welcome a {
+    margin: 0 33%; } }
 .services {
   padding: 100px 0;
   background-color: #17c2a4;
@@ -575,6 +594,17 @@ a.link {
 
   button {
     margin-left: 10% !important; } }
+@media only screen and (max-width: 992px) {
+  .get-in-touch .touch {
+    margin-left: 45px; }
+  .get-in-touch button {
+    margin-left: 35%; }
+
+  input {
+    width: 412px; }
+
+  textarea {
+    width: 872px !important; } }
 footer {
   padding: 5px 0;
   background-color: #344b8e; }
@@ -597,6 +627,9 @@ a.foot:hover {
 @media only screen and (max-width: 576px) and (min-width: 330px) {
   footer .nav {
     width: 305px; } }
+@media only screen and (max-width: 992px) {
+  footer .nav {
+    width: 953px; } }
 .testimonials {
   padding: 100px 0;
   background-color: #d74680;

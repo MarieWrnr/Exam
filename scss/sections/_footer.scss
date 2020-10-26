@@ -24,3 +24,8 @@ a.foot:hover{
         width: 305px;
     }
 }
+@media only screen and (max-width: 992px){
+ footer .nav {
+    width: 953px;
+}
+}

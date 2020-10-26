@@ -105,3 +105,19 @@ a.link{
     }
 
 }
+@media only screen and (max-width: 992px) {
+    header{ 
+        width: 100%; 
+        max-width: 992px;
+        position: absolute;
+        margin: 0;
+        img{
+            width: 96px;
+            height: 30px;
+        }
+        
+    }
+    .nav{
+        width: 818px;
+    }
+}
