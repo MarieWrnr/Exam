@@ -24,7 +24,27 @@
         color: white;
     }
 }
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 320px) {
+    .line-center{
+        margin-left: 32%;
+    }
+    .services-item {
+        max-width: initial !important;
+        box-sizing: border-box;
+    }
+    .icon{
+        margin-left: 105px !important;
+    & img{
+        width: initial;
+        height: 83px;
+    }
+    }   
+    p{
+        width: initial !important;
+        margin-left: 0 !important;
+    }
+}
+@media only screen and (max-width: 576px) and (min-width: 330px) {
     .line-center{
         margin-left: 38%;
     }

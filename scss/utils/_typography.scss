@@ -56,12 +56,51 @@ button{
     font-size: $text_size_button;
     font-weight: bold;
 }
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 320px){
+    header{
+        .nav-list-item:not(:first-child){
+            font-size: 10px;
+        }
+    }
+    .welcome{
+        &-heading, &-heading-2{
+        font-size: 24.5px;
+        }
+       
+        a.btn{
+            font-size: 15.5px;
+        }
+    }
     h2{
-        font-size: 20px;
+        font-size: 17px;
+    }
+    q{
+        font-size: initial !important;
     }
     h3{
-        font-size: 18px;
+        font-size: 15.5px;
+        text-align: center !important;
+    }
+    p.descr, p.add-ds, p.descr-1, a.btn{
+        font-size: 13.5px;
+    }
+    .team{
+        h2{
+            font-size: 15px;
+        }
+    }
+    .testimonials{
+        h2{
+            font-size: 12px;
+        }
+    }
+}
+@media only screen and (max-width: 576px) and (min-width: 330px) {
+    h2{
+        font-size: $h2_media;
+    }
+    h3{
+        font-size: $p_descr;
         text-align: center !important;
     }
     p.descr, p{

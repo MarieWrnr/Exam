@@ -52,7 +52,34 @@ button {
   font-size: 17.5px;
   font-weight: bold; }
 
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 320px) {
+  header .nav-list-item:not(:first-child) {
+    font-size: 10px; }
+
+  .welcome-heading, .welcome-heading-2 {
+    font-size: 24.5px; }
+  .welcome a.btn {
+    font-size: 15.5px; }
+
+  h2 {
+    font-size: 17px; }
+
+  q {
+    font-size: initial !important; }
+
+  h3 {
+    font-size: 15.5px;
+    text-align: center !important; }
+
+  p.descr, p.add-ds, p.descr-1, a.btn {
+    font-size: 13.5px; }
+
+  .team h2 {
+    font-size: 15px; }
+
+  .testimonials h2 {
+    font-size: 12px; } }
+@media only screen and (max-width: 576px) and (min-width: 330px) {
   h2 {
     font-size: 20px; }
 
@@ -93,7 +120,17 @@ button {
 .col {
   flex: auto; }
 
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 320px) {
+  .container {
+    max-width: 320px;
+    position: relative; }
+
+  .row {
+    flex-direction: column; }
+
+  .col {
+    margin: 0 auto; } }
+@media only screen and (max-width: 576px) and (min-width: 330px) {
   .container {
     max-width: 576px;
     position: relative; }
@@ -183,17 +220,42 @@ a.link {
     height: 37px;
     margin-right: 20px; }
 
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 320px) {
+  header {
+    width: 100%;
+    max-width: 320px;
+    position: absolute;
+    margin: 0; }
+    header img {
+      width: 70px !important;
+      height: 21px !important;
+      margin-right: initial !important; }
+
+  .nav-list {
+    padding: 0;
+    margin: 0; }
+    .nav-list-item:not(:first-child) {
+      margin-left: 5px;
+      margin-top: 10px; } }
+@media only screen and (max-width: 576px) and (min-width: 330px) {
   header {
     width: 100%;
     max-width: 576px;
     position: absolute;
     margin: 0; }
+    header img {
+      width: 96px;
+      height: 30px; }
 
   .nav-list {
-    justify-content: flex-start; }
+    padding: 0;
+    margin: 0; }
     .nav-list-item:not(:first-child) {
-      display: none; } }
+      margin-left: 7px;
+      font-size: 13px;
+      margin-top: 10px; }
+    .nav-list-item:first-child {
+      margin-right: 15px; } }
 .welcome {
   display: flex;
   align-items: center;
@@ -215,7 +277,7 @@ a.link {
     position: relative;
     top: 70px; }
 
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 576px) and (min-width: 280px) {
   .welcome-heading, .welcome-heading-2, .welcome a {
     text-align: center; }
   .welcome-heading, .welcome-heading-2 {
@@ -246,7 +308,24 @@ a.link {
   .services .white {
     color: white; }
 
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 320px) {
+  .line-center {
+    margin-left: 32%; }
+
+  .services-item {
+    max-width: initial !important;
+    box-sizing: border-box; }
+
+  .icon {
+    margin-left: 105px !important; }
+    .icon img {
+      width: initial;
+      height: 83px; }
+
+  p {
+    width: initial !important;
+    margin-left: 0 !important; } }
+@media only screen and (max-width: 576px) and (min-width: 330px) {
   .line-center {
     margin-left: 38%; }
 
@@ -402,6 +481,21 @@ a.link {
     position: relative;
     top: 70px; }
 
+@media only screen and (max-width: 320px) {
+  .portfolio .mini-menu {
+    margin-left: 6% !important; }
+    .portfolio .mini-menu .rectangle {
+      margin-left: initial;
+      padding: 3px 9px; }
+  .portfolio .port_block img {
+    width: 203px;
+    height: 113px; }
+  .portfolio .descr-1 {
+    margin-right: 0 !important; }
+  .portfolio a {
+    margin-left: 25px; }
+  .portfolio .btn-primary {
+    padding: 28px 56px; } }
 @media only screen and (max-width: 576px) and (min-width: 330px) {
   .portfolio .mini-menu, .portfolio .rectangle {
     margin-left: initial;
@@ -455,7 +549,20 @@ a.link {
     padding-left: 25px;
     padding-top: 24px; }
 
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 320px) {
+  .touch {
+    margin-left: initial !important; }
+
+  input, textarea {
+    width: 254px !important; }
+
+  input {
+    padding: 18px 20px 14px !important;
+    margin-top: 10px; }
+
+  button {
+    margin-left: 4% !important; } }
+@media only screen and (max-width: 576px) and (min-width: 330px) {
   .touch {
     margin-left: initial !important; }
 
@@ -484,7 +591,10 @@ a {
 a.foot:hover {
   color: #30bae7; }
 
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 320px) {
+  footer .nav {
+    width: 235px; } }
+@media only screen and (max-width: 576px) and (min-width: 330px) {
   footer .nav {
     width: 305px; } }
 .testimonials {
@@ -519,7 +629,7 @@ a.foot:hover {
   .testimonials .text {
     margin-left: 45px; }
 
-@media only screen and (max-width: 576px) and (min-width: 300px) {
+@media only screen and (max-width: 576px) and (min-width: 280px) {
   .respect {
     width: initial !important;
     margin-left: 20px !important; }

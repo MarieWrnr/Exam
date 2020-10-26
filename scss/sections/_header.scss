@@ -59,18 +59,49 @@ a.link{
         margin-right: 20px;
     }
 }
-@media only screen and (max-width: 576px) and (min-width: 300px) {
-    header{ //сделать выплывающий справа список
+@media only screen and (max-width: 320px){
+    header{ 
+        width: 100%; 
+        max-width: 320px;
+        position: absolute;
+        margin: 0;
+        img{
+            width: 70px !important;
+            height: 21px !important;
+            margin-right: initial !important;
+        }
+        
+    }
+    .nav-list{
+        padding: 0;
+        margin: 0;
+        &-item:not(:first-child) {
+            margin-left: 5px;
+            margin-top: 10px; }
+    }
+}
+@media only screen and (max-width: 576px) and (min-width: 330px) {
+    header{ 
         width: 100%; 
         max-width: 576px;
         position: absolute;
         margin: 0;
+        img{
+            width: 96px;
+            height: 30px;
+        }
+        
     }
     .nav-list{
-        justify-content: flex-start;
-        &-item:not(:first-child){
-            display: none;
-        }
+        padding: 0;
+        margin: 0;
+        &-item:not(:first-child) {
+            margin-left: 7px;
+            font-size: 13px;
+            margin-top: 10px; }
+            &-item:first-child {
+                margin-right: 15px;
+            }
     }
 
 }
