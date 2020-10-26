@@ -48,3 +48,18 @@
     }
 
 }
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    .touch{
+        margin-left: initial !important;
+    }
+    input, textarea{
+        width: 333px !important;
+    }
+    input{
+        padding: 20px 23px 15px !important;
+        margin-top: 10px;
+    }
+    button{
+        margin-left: 10% !important;
+    }
+}

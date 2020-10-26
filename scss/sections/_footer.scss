@@ -14,3 +14,8 @@ a{
 a.foot:hover{
     color: $button_br_blue_text;
 }
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    footer .nav{
+        width: 305px;
+    }
+}

@@ -23,3 +23,23 @@
         top: 70px;
     }
 }
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    .welcome{
+        &-heading, &-heading-2, a{
+            text-align: center;
+        }
+        &-heading, &-heading-2{
+            width: initial !important;
+            margin: 0 5px 0 5px !important;
+        }
+        &-heading-2{
+            display: inline-block;
+        }
+        a{
+            margin: 0 auto !important;
+            display: block;
+
+        }
+    }
+
+}

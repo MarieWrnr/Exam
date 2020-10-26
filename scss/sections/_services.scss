@@ -8,9 +8,6 @@
         width: 603px;
         height: 45px;
         margin-left: 23%;
-        &-white{
-            color: white;
-        }
     }
     &-wrapper {
         margin-top: 80px;
@@ -25,5 +22,14 @@
     }
    .white{
         color: white;
+    }
+}
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    .line-center{
+        margin-left: 38%;
+    }
+    p{
+        width: initial !important;
+        margin-left: 0 !important;
     }
 }

@@ -14,6 +14,9 @@ a, h2, h1{
 h1, h2, h3, p.descr, p.descr-1, .hd, .add-ds{
     text-align: center;
 }
+h3, .descr{
+    font-size: $p_descr;
+}
 .l-heading{
     text-align: left;
 }
@@ -29,16 +32,11 @@ h2{
 }
 h3{
     font-size: $h3_text;
-    line-height: $p_descr;
 }
 q{
     font-style: italic;
     font-size: $quote;
 }
-.descr{
-    font-size: $p_descr;
-}
-
 .add-ds{
     font-size: $text_l;
 }
@@ -57,6 +55,43 @@ button{
     font-family: 'Titillium Web', sans-serif;
     font-size: $text_size_button;
     font-weight: bold;
+}
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    h2{
+        font-size: 20px;
+    }
+    h3{
+        font-size: 18px;
+        text-align: center !important;
+    }
+    p.descr, p{
+        font-size: 16px;
+    }
+    .welcome{
+        &-heading, &-heading-2{
+        font-size: 24.5px;
+        }
+       
+        a.btn{
+            font-size: 15.5px;
+        }
+    }
+    .portfolio{
+        a{
+            font-size: 15.5px;
+        }
+    }
+    .testimonials, .team{
+        h2{
+        font-size: 18px;
+        }
+    }
+    q{
+        font-size: 15.5px;
+    }
+    a{
+        width: 100px;
+    }
 }
 
 

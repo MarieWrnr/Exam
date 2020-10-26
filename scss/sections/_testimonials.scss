@@ -41,3 +41,19 @@
         margin-left: 45px;
     }
 }
+@media only screen and (max-width: 576px) and (min-width: 300px) {
+    .respect{
+        width: initial !important;
+        margin-left: 20px !important;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    q{
+        width: 150px;
+    }
+    .testimonials h3{
+        text-align: left !important;
+    }
+}
